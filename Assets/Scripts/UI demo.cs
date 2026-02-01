@@ -12,15 +12,20 @@ public class UIdemo : MonoBehaviour
     public Image duckieImage;//image of the duck on ui
     public int howManyClicks = 0;
     public TextMeshProUGUI score;
+    public Slider slider;
+    public TextMeshProUGUI sliderDisplay;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        slider.wholeNumbers = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        sliderDisplay.text = slider.value.ToString();
         if (Keyboard.current.anyKey.wasPressedThisFrame)
         {
             changeColour();
@@ -36,7 +41,7 @@ public class UIdemo : MonoBehaviour
     }
     public void changeScale(float scale)
     {
-        scalesss += scale;
+        scalesss = scale;
         transform.localScale = Vector3.one * scalesss;
     }
     public void AddToTheNumber()
