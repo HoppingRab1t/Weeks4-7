@@ -1,15 +1,21 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+    public List<GameObject> howMany;
+
+
     public Slider healthBar;
         public SpriteRenderer player;
     public int health = 5;
     public AudioSource audioSource;
     public AudioClip sqeak;
     public AudioClip death;
+
+    public bool type = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,10 +35,19 @@ public class HealthBar : MonoBehaviour
             ;
             if (health == 0)
             {
-                audioSource.clip = death;
-                audioSource.Play();
-                //audioSource.PlayOneShot(death);
-                gameObject.SetActive(false);
+                if (type)
+                {
+                    audioSource.clip = death;
+                    audioSource.Play();
+                    //audioSource.PlayOneShot(death);
+                    gameObject.SetActive(false);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
+
+                
             }
             else
             {
