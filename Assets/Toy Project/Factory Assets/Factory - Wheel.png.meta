@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 66897dfa4de5b2f45bf933cebf9038fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3790720615329574931
+    second: Factory - Wheel_0
+  - first:
+      213: -134931641483857199
+    second: Factory - Wheel_1
+  - first:
+      213: 1611911507732319335
+    second: Factory - Wheel_2
+  - first:
+      213: 5348763152745016223
+    second: Factory - Wheel_3
+  - first:
+      213: 2186876758822240978
+    second: Factory - Wheel_4
+  - first:
+      213: 568099539149752627
+    second: Factory - Wheel_5
+  - first:
+      213: -6681133155510809624
+    second: Factory - Wheel_6
+  - first:
+      213: -7235684047720073730
+    second: Factory - Wheel_7
+  - first:
+      213: -2084670737145987808
+    second: Factory - Wheel_8
+  - first:
+      213: -3456044878094385464
+    second: Factory - Wheel_9
+  - first:
+      213: -4278253370923086477
+    second: Factory - Wheel_10
+  - first:
+      213: 1947394824047699040
+    second: Factory - Wheel_11
+  - first:
+      213: -7606337339566521361
+    second: Factory - Wheel_12
+  - first:
+      213: -304697422212283972
+    second: Factory - Wheel_13
+  - first:
+      213: -5763946306363800535
+    second: Factory - Wheel_14
+  - first:
+      213: -2080865636385066774
+    second: Factory - Wheel_15
+  - first:
+      213: -3764763565399388560
+    second: Factory - Wheel_16
+  - first:
+      213: 4958419570438964721
+    second: Factory - Wheel_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Factory - Wheel_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 171
+        width: 254
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3103877c0585b9430800000000000000
+      internalID: 3790720615329574931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 387
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2f4601360a02ef0800000000000000
+      internalID: -134931641483857199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 342
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ccfbbd9f8ae5610800000000000000
+      internalID: 1611911507732319335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 349
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ba01b9fbf9a3a40800000000000000
+      internalID: 5348763152745016223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_4
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 316
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2482953d8595e10800000000000000
+      internalID: 2186876758822240978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_5
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 319
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339851c558b42e700800000000000000
+      internalID: 568099539149752627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 296
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb81b01bc8d743a0800000000000000
+      internalID: -6681133155510809624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_7
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 287
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef53fa4e1bfa59b90800000000000000
+      internalID: -7235684047720073730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_8
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 208
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02df2c67203c113e0800000000000000
+      internalID: -2084670737145987808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_9
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 176
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce30698e79a900d0800000000000000
+      internalID: -3456044878094385464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 170
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d030fe93790a4c0800000000000000
+      internalID: -4278253370923086477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 171
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0642cc45649860b10800000000000000
+      internalID: 1947394824047699040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_12
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 173
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe309516d7cd07690800000000000000
+      internalID: -7606337339566521361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 170
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb14f011f4f75cbf0800000000000000
+      internalID: -304697422212283972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_14
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 177
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924c2c08f595200b0800000000000000
+      internalID: -5763946306363800535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 171
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae073f58ab74f13e0800000000000000
+      internalID: -2080865636385066774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_16
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 175
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e490ddb7fd0cbc0800000000000000
+      internalID: -3764763565399388560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory - Wheel_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 175
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f50c571458dfc440800000000000000
+      internalID: 4958419570438964721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Factory - Wheel_0: 3790720615329574931
+      Factory - Wheel_1: -134931641483857199
+      Factory - Wheel_10: -4278253370923086477
+      Factory - Wheel_11: 1947394824047699040
+      Factory - Wheel_12: -7606337339566521361
+      Factory - Wheel_13: -304697422212283972
+      Factory - Wheel_14: -5763946306363800535
+      Factory - Wheel_15: -2080865636385066774
+      Factory - Wheel_16: -3764763565399388560
+      Factory - Wheel_17: 4958419570438964721
+      Factory - Wheel_2: 1611911507732319335
+      Factory - Wheel_3: 5348763152745016223
+      Factory - Wheel_4: 2186876758822240978
+      Factory - Wheel_5: 568099539149752627
+      Factory - Wheel_6: -6681133155510809624
+      Factory - Wheel_7: -7235684047720073730
+      Factory - Wheel_8: -2084670737145987808
+      Factory - Wheel_9: -3456044878094385464
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
