@@ -3,6 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class ToySpawner : MonoBehaviour
 {
@@ -31,13 +32,16 @@ public class ToySpawner : MonoBehaviour
 
     bool pressed = false;
 
+    public Slider visuals;
+
     Vector2 topRight;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         topRight = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-
+        visuals.maxValue = maxPressure;
+        visuals.minValue = 0;
         //interval = Random.Range(1,2);
     }
 
@@ -81,19 +85,33 @@ public class ToySpawner : MonoBehaviour
 
             if (pressure < maxPressure)
             {
-                pressure += 2 * Time.deltaTime;
+                pressure += 5 * Time.deltaTime;
             }
             else if (pressure >= maxPressure)
             {
                 pressure = maxPressure;
             }
         }
+        else
+        {
+            pressure -= ((pressure - 0) /1.05f) * Time.deltaTime;
+            if (pressure <= 0)
+            {
+                pressure = 0;
+            }
+        }
+        visuals.value = pressure;
+
     }
     public void ButtonPressed()
     {
-
+        
         pressed = true;
 
+    }
+    public void pressureReset()
+    {
+        pressure = 0;
     }
     public void ButtonReleased()
     {
@@ -110,6 +128,5 @@ public class ToySpawner : MonoBehaviour
         {
             points += 1;
         }
-        pressure = 0;
     }
 }
