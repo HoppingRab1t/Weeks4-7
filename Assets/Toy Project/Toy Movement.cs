@@ -4,7 +4,7 @@ public class ToyMovement: MonoBehaviour
 {
     public bool stop = false;
     Vector2 pos;
-    public int movement = 1;
+    public float movement = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,7 +16,7 @@ public class ToyMovement: MonoBehaviour
     void Update()
     {
         pos = transform.position;
-        pos.x += movement;
+        pos.x += movement * Time.deltaTime;
 
         //if (pos.x <= 0)
         //{

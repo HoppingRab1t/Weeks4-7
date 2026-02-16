@@ -3,7 +3,7 @@ using UnityEngine;
 public class TrackMovement : MonoBehaviour
 {
     public bool stop;
-    public int speed;
+    public float speed;
     Vector2 pos;
 
     Vector2 bottomLeft;
@@ -24,10 +24,12 @@ public class TrackMovement : MonoBehaviour
     void Update()
     {            
         
-        toySpawner = GetComponent<ToySpawner>();
+        toySpawner = toySpawner.GetComponent<ToySpawner>();
+
+        speed = toySpawner.TrackMovement;
 
         pos = transform.position;
-        pos.x += toySpawner.TrackMovement * Time.deltaTime;
+        pos.x += speed * Time.deltaTime;
         //stop = toySpawner.move;
 
 
