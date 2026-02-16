@@ -27,7 +27,7 @@ public class TrackMovement : MonoBehaviour
         toySpawner = toySpawner.GetComponent<ToySpawner>();
 
         speed = toySpawner.TrackMovement;
-
+        stop = toySpawner.move;
         pos = transform.position;
         pos.x += speed * Time.deltaTime;
         //stop = toySpawner.move;

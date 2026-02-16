@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using NUnit.Framework;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -33,6 +34,8 @@ public class ToySpawner : MonoBehaviour
     bool pressed = false;
 
     public Slider visuals;
+    public Slider controlLever;
+    public TextMeshProUGUI pointValue;
 
     Vector2 topRight;
 
@@ -48,8 +51,19 @@ public class ToySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        pointValue.text = "QUOTA: " + points.ToString();
+
+        if (controlLever.value == 1)
+        {
+            move = true;
+        }else if (controlLever.value == 0)
+        {
+            move = false;
+        }
+       
         timer += 1 * Time.deltaTime;
-        if (timer >= interval)
+        if (timer >= interval && move)
         {
             //creates new instnace
             toyPrefab = Instantiate(target, transform.position, transform.rotation);
@@ -62,8 +76,9 @@ public class ToySpawner : MonoBehaviour
         {
 
             toyMovement = toyCount[i].GetComponent<ToyMovement>();
-            move = toyMovement.stop;
+            //move = toyMovement.stop;
             toyMovement.movement = TrackMovement;
+            toyMovement.stop = move;
             if (spriteRenderer.bounds.Contains(toyCount[i].transform.position))
             {
                 //change when the button is pressed instead of the key is pressed.
@@ -80,6 +95,7 @@ public class ToySpawner : MonoBehaviour
         }
         if (pressed)
         {
+            
             Debug.Log("PRESSSED");
 
 
@@ -111,7 +127,7 @@ public class ToySpawner : MonoBehaviour
     }
     public void pressureReset()
     {
-        pressure = 0;
+        //currently unused 
     }
     public void ButtonReleased()
     {
