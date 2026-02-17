@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ToyMovement: MonoBehaviour
@@ -7,10 +9,15 @@ public class ToyMovement: MonoBehaviour
     public float movement = 1;
     public ToySpawner toySpawner;
 
+    SpriteRenderer image;
+    public List<Sprite> clothing;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        transform.eulerAngles = new Vector3(0,0,Random.Range(0,360));
+
+
     }
 
     // Update is called once per frame
@@ -31,5 +38,9 @@ public class ToyMovement: MonoBehaviour
         }
         
 
+    }
+    public void change(){
+        transform.eulerAngles = Vector3.zero;
+       
     }
 }

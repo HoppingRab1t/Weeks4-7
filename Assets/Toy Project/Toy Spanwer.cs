@@ -16,9 +16,12 @@ public class ToySpawner : MonoBehaviour
     //public Transform track;
 
     public List<GameObject> toyCount;
+    public List<Sprite> clothing;
 
-    public float timer = 0;
-    public float interval = 5;
+
+    float timer = 0;
+    float interval = 2;
+
     public ToyMovement toyMovement;
 
     public SpriteRenderer spriteRenderer;
@@ -36,6 +39,8 @@ public class ToySpawner : MonoBehaviour
     public Slider visuals;
     public Slider controlLever;
     public TextMeshProUGUI pointValue;
+
+
 
     Vector2 topRight;
 
@@ -57,13 +62,14 @@ public class ToySpawner : MonoBehaviour
         if (controlLever.value == 1)
         {
             move = true;
-        }else if (controlLever.value == 0)
+        }
+        else if (controlLever.value == 0)
         {
             move = false;
         }
-       
+
         timer += 1 * Time.deltaTime;
-        if (timer >= interval && move)
+        if (timer >= interval && !move)
         {
             //creates new instnace
             toyPrefab = Instantiate(target, transform.position, transform.rotation);
@@ -79,13 +85,13 @@ public class ToySpawner : MonoBehaviour
             //move = toyMovement.stop;
             toyMovement.movement = TrackMovement;
             toyMovement.stop = move;
-            if (spriteRenderer.bounds.Contains(toyCount[i].transform.position))
+            if (spriteRenderer.bounds.Contains(toyMovement.transform.position))
             {
                 //change when the button is pressed instead of the key is pressed.
 
             }
 
-            if (toyCount[i].transform.position.x > 5)
+            if (toyMovement.transform.position.x > topRight.x +5)
             {
                 //destroys the toy once it goes off screen
                 GameObject toy = toyCount[i];
@@ -95,8 +101,8 @@ public class ToySpawner : MonoBehaviour
         }
         if (pressed)
         {
-            
-            Debug.Log("PRESSSED");
+
+            //Debug.Log("PRESSSED");
 
 
             if (pressure < maxPressure)
@@ -110,7 +116,7 @@ public class ToySpawner : MonoBehaviour
         }
         else
         {
-            pressure -= ((pressure - 0) /1.05f) * Time.deltaTime;
+            pressure -= ((pressure - 0) / 1.05f) * Time.deltaTime;
             if (pressure <= 0)
             {
                 pressure = 0;
@@ -121,7 +127,7 @@ public class ToySpawner : MonoBehaviour
     }
     public void ButtonPressed()
     {
-        
+
         pressed = true;
 
     }
@@ -131,18 +137,40 @@ public class ToySpawner : MonoBehaviour
     }
     public void ButtonReleased()
     {
+        for (int i = 0; i < toyCount.Count; i += 1)
+        {
+            toyMovement = toyCount[i].GetComponent<ToyMovement>();
+
+            if (spriteRenderer.bounds.Contains(toyMovement.transform.position))
+            {
+                if (Vector2.Distance(toyMovement.transform.position, new Vector2(0, -3)) < 2)
+                {
+                    if (pressure == Mathf.Clamp(pressure, 9, maxPressure))
+                    {
+                        points += -100;
+                    }
+                    else if (pressure == Mathf.Clamp(pressure, 7, 9))
+                    {
+                        points += 300;
+                        toyMovement.change();
+                        int rand = Random.Range(0, 4);
+                        toyMovement.GetComponent<SpriteRenderer>().sprite = clothing[rand];
+                    }
+                    else if (pressure == Mathf.Clamp(pressure, 0, 7))
+                    {
+                        points += 50;
+                    }
+                }
+                else
+                {
+                    points -= 100;
+                }
+                //change when the button is pressed instead of the key is pressed.
+
+            }
+
+        }
         pressed = false;
-        if (pressure == Mathf.Clamp(pressure, 8, maxPressure))
-        {
-            points += -1;
-        }
-        else if (pressure == Mathf.Clamp(pressure, 6, 8))
-        {
-            points += 3;
-        }
-        else if (pressure == Mathf.Clamp(pressure, 0, 6))
-        {
-            points += 1;
-        }
+
     }
 }

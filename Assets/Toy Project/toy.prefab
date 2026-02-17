@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 6540163237086198486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.65, y: -1.84, z: 0}
-  m_LocalScale: {x: 1.8070983, y: 1.7332692, z: 1}
+  m_LocalPosition: {x: -10.5902, y: -2.6063, z: 0}
+  m_LocalScale: {x: 0.5784, y: 0.5988, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: -983296130339864622, guid: f1d519290bc49d94dabd1833470c3eb4, type: 3}
+  m_Sprite: {fileID: -7520528511527532580, guid: c989ac1821c9ce547817b1e444796b7f, type: 3}
   m_Color: {r: 0.5345911, g: 0.46254373, b: 0.40850824, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.99, y: 0.95}
+  m_Size: {x: 4.46, y: 3.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,3 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7eedf94da21d64493d7c6ae1c775e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop: 0
+  movement: 1
+  toySpawner: {fileID: 0}
+  clothing:
+  - {fileID: -7520528511527532580, guid: c989ac1821c9ce547817b1e444796b7f, type: 3}
+  - {fileID: -983296130339864622, guid: f1d519290bc49d94dabd1833470c3eb4, type: 3}
+  - {fileID: -740536676738882778, guid: c56f39f913596d943adb46e2d5346ee6, type: 3}
+  - {fileID: 1597492703415919409, guid: 1cffdeb695458b944b296b828067e758, type: 3}
+  - {fileID: -887230987, guid: 529af4bdebfb57844ac40648c60dbc05, type: 3}
+  - {fileID: 488566688391327861, guid: 74d5a24a0f5e5e44fb22c6b9147edebb, type: 3}
