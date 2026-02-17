@@ -51,4 +51,21 @@ public class ContactSensor : MonoBehaviour
     {
         Debug.Log(number);
     }
+    public void YOUCH()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            Vector2 pos = transform.position;
+            pos.y += (i / 2) * Time.deltaTime;
+            transform.position = pos;
+        }
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    Vector2 pos = transform.position;
+        //    pos.y -= (i / 2) * Time.deltaTime;
+        //    transform.position = pos;
+        //}
+
+    }
 }
+
